@@ -5,7 +5,7 @@
 :root{
     --button-color:#E02C6D;
     --container-color:rgb(241, 231, 231);
-    --footer-color:#444444;
+    --footer-color:#00031b;
     --font-color:black ;
     --button-font-color:white;
 
@@ -47,6 +47,7 @@ a{
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .heighlit{
     color: var(--button-color);
@@ -164,4 +165,49 @@ nav{
 }
 .active{
     color: var(--button-color);
+}
+.read-more-link {
+    display: flex;
+    justify-content: end;
+}
+.read-more-link button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin: 50px 0 30px 0;
+    cursor: pointer;
+}
+/* --------------------my conten---------------------------- */
+.contacct{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap:25px ;
+}
+.left-contact video{
+    width: 100%;
+}
+.contat-from{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+textarea{
+    padding: 10px 10px;
+}
+
+/* ----------------footer part-------------------- */
+footer{
+    background-color: var(--footer-color);
+}
+.footer-contenet{
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+.social-bar{
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
 }
