@@ -1,0 +1,133 @@
+/* -------------------import css ----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200&family=Permanent+Marker&family=Poppins:wght@500;700&display=swap');
+
+/* --------------------------------coustom property----------------------- */
+:root{
+    --button-color:#E02C6D;
+    --container-color:rgb(241, 231, 231);
+    --footer-color:#444444;
+    --font-color:black ;
+    --button-font-color:white;
+
+}
+/* -----------element css--------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a,
+li{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color:var(--font-color) ;
+}
+/* -------------------------common css---------------------------------- */
+.container{
+    max-width: 1200px;
+    padding: 10px 166px 20px 166px;
+    margin: 0px auto;
+    background-color: var(--container-color);
+}
+.lazy{
+    color: var(--button-color);
+}
+.my-button{
+    font-size: 16px;
+    color: var(--button-font-color);
+    background-color: var(--button-color);
+    outline: 0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.heighlit{
+    color: var(--button-color);
+}
+/*---------------------------header part--------------------------*/
+/*---------------------------nav bar--------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-heading{
+    font-size: 24px;
+    font-weight: bold;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+}
+.navigation ul li{
+    padding-right: 20px;
+}
+.navigation ul li a{
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+}
+.navigation ul li a:hover{
+    background-color: var(--button-color);
+    border-radius: 10px;
+    transition: .4s;
+
+}
+/*----------------------banner part-------------------------------*/
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    height: calc(100vh - 230px);
+    justify-content: center;
+}
+.banner-left{
+    display: flex;
+    align-items: center;
+}
+.banner-heading{
+    font-size: 52px;
+    font-weight: 600px;
+}
+.banner-pera{
+    padding: 20px 0;
+}
+.my-button .lazy{
+    padding-left: 10px;
+}
+.my-button .fa-arrow-right{
+    padding-left: 5px;
+}
+.banner-right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.banner-photo{
+    background-image: url(../image/Circle\ design.svg);
+}
+.banner-photo img{
+    width: 100%;
+}
+/* ---------------------advaties part----------------- */
+.all-adds{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.add{
+    width: 55.05px;
+    height: 31.06px;
+}
+.new{
+    border: 1px solid violet;
+    margin: 25px 0;
+}
