@@ -14,12 +14,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: var(--container-color);
 }
 a,
 li{
@@ -30,11 +32,13 @@ a{
     color:var(--font-color) ;
 }
 /* -------------------------common css---------------------------------- */
+
+
 .container{
     max-width: 1200px;
-    padding: 10px 166px 20px 166px;
-    margin: 0px auto;
-    background-color: var(--container-color);
+    padding: 40px 80px;
+    margin: 0 auto;
+
 }
 .lazy{
     color: var(--button-color);
@@ -97,6 +101,40 @@ nav{
 .banner-heading{
     font-size: 52px;
     font-weight: 600px;
+    animation: my-animation 5s ease-in 5s infinite alternate ;
+    animation-play-state: running;
+}
+@keyframes my-animation {
+    10%{
+        color: #0f0f0f;
+    }
+    20%{
+        color: #19e612;
+    }
+    30%{
+        color: #d495ac;
+    }
+    40%{
+        color: #330c1b;
+    }
+    50%{
+        color: #063cf0;
+    }
+    60%{
+        color: #71e008;
+    }
+    70%{
+        color: #770c33;
+    }
+    80%{
+        color: #10013b;
+    }
+    900%{
+        color: #0ba5ec;
+    }
+    100%{
+        color: #fd005d;
+    }
 }
 .banner-pera{
     padding: 20px 0;
@@ -114,9 +152,15 @@ nav{
 }
 .banner-photo{
     background-image: url(../image/Circle\ design.svg);
+    display: flex;
+    justify-content: end;
 }
 .banner-photo img{
-    width: 100%;
+    width: 70%;
+}
+.banner-photo:hover .img{
+    transform: scale(1.3) rotate(-360deg);
+    transition: 8.6s ease-in-out;
 }
 /* ---------------------advaties part----------------- */
 .all-adds{
@@ -210,4 +254,114 @@ footer{
     font-size: 18px;
     color: white;
     padding: 5px 10px;
+}
+@media (max-width:1400px) {
+    .banner{
+        height: 100%;
+    }
+}
+@media (max-width:1200px) {
+    .container{
+        width: 100%;
+    }
+    .banner{
+        width: 100;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 5px 20px 5px;
+    }
+    .banner-heading{
+        font-size: 35px;
+    }
+    .banner-pera{
+        font-size: 14px;
+    }
+    .my-button{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .banner-photo{
+        width: 90%;
+    }
+    .section-title{
+        font-size: 18px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .contat-from .button-position{
+        text-align: right;
+    }
+}
+@media (max-width:950px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-heading{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width:850px) {
+    body{
+        background-color: rgba(175, 153, 175, 0.288);
+    }
+    .container{
+        width: 100%;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner,
+    .cards,
+    .contacct{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .banner-right{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    .banner-left{
+        order: 2;
+    }
+    .all-adds{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .read-more-link {
+        display: flex;
+        justify-content: center;
+    }
+    .left-contact video{
+        width: 90%;
+    }
+    .contacct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contat-from{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation ul li i{
+        display: none;
+    }
+    .navigation ul li{
+        background-color: violet;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
 }
