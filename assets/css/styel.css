@@ -56,6 +56,10 @@ a{
 .heighlit{
     color: var(--button-color);
 }
+.new{
+    border: 1px solid violet;
+    margin: 25px 0 25px 0;
+}
 /*---------------------------header part--------------------------*/
 /*---------------------------nav bar--------------------------*/
 header{
@@ -175,10 +179,6 @@ nav{
     width: 55.05px;
     height: 31.06px;
 }
-.new{
-    border: 1px solid violet;
-    margin: 25px 0 0 0;
-}
 /* -------------- main section---------------------*/
 .section-title{
     text-align: center;
@@ -193,13 +193,24 @@ nav{
     background-color: white;
     width: 329px;
     height: 476px;
+    transition: 1.6s;
+    box-shadow: none;
+}
+.card:hover{ 
     box-shadow: -7px 7px 8px 3px rgba(135,29,29,0.47);
     -webkit-box-shadow: -7px 7px 8px 3px rgba(135,29,29,0.47);
     -moz-box-shadow: -7px 7px 8px 3px rgba(135,29,29,0.47);
     border-radius: 5px;
+    
 }
 .card-info{
     padding: 17px 15px 10px 14px;
+}
+.describtion h1{
+    font-size: 18px;
+}
+.describtion p{
+    font-size: 16px;
 }
 .iteam-photo{
     width: 196px;
@@ -258,6 +269,17 @@ footer{
     color: white;
     padding: 5px 10px;
 }
+/* -------three dot manu bar--------------------- */
+.nav-icon{
+    color:rgb(12, 12, 12) ;
+    font-size: 30px;
+}
+#nav-togoler{
+    display: none;
+}
+.nav-togoler-icon{
+    display: none;
+}
 /* --------------------------------reponsive part------------------------ */
 @media (max-width:1400px) {
     .banner{
@@ -299,11 +321,12 @@ footer{
         text-align: right;
     }
 }
+
 @media (max-width:950px) {
-    nav{
+    /* nav{
         display: flex;
         flex-direction: column;
-    }
+    } */
     .nav-heading{
         padding-bottom: 20px;
     }
@@ -312,16 +335,37 @@ footer{
     body{
         background-color: rgba(175, 153, 175, 0.288);
     }
-    .container{
+    /* .container{
         width: 100%;
-    }
-    nav{
+    } */
+    /* nav{
         text-align: center;
-    }
-    .navigation-bar{
+    } */
+    /* .navigation-bar{
         display: flex;
         flex-direction: column;
+    } */
+    .nav-togoler-icon{
+        display: block;
     }
+    .navigation-bar{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 60%;
+        text-align: left;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: rgba(255, 255, 255, 0.452);
+        padding: 20px 0;
+        transform: translatex(330px);
+        transition: .5s ease-in-out;
+        border-radius: 20px;
+    }
+    #nav-togoler:checked ~ .navigation-bar{
+        transform: translateY(0px);
+    }
+   
     .banner,
     .cards,
     .contacct{
