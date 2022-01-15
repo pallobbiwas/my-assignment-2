@@ -351,14 +351,14 @@ footer{
     .navigation-bar{
         position: absolute;
         top: 80px;
-        right: 0;
-        width: 60%;
+        left: 0;
+        width: 100%;
         text-align: left;
         flex-direction: column;
         align-items: flex-end;
         background-color: rgba(255, 255, 255, 0.452);
         padding: 20px 0;
-        transform: translatex(600px);
+        transform: translatey(-330px);
         transition: .5s ease-in-out;
         border-radius: 20px;
     }
