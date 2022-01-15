@@ -36,7 +36,7 @@ a{
 
 .container{
     max-width: 1200px;
-    padding: 40px 80px;
+    padding: 20px 80px;
     margin: 0 auto;
 
 }
@@ -58,6 +58,9 @@ a{
 }
 /*---------------------------header part--------------------------*/
 /*---------------------------nav bar--------------------------*/
+header{
+    padding-top: 20px;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -174,7 +177,7 @@ nav{
 }
 .new{
     border: 1px solid violet;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
 }
 /* -------------- main section---------------------*/
 .section-title{
@@ -255,6 +258,7 @@ footer{
     color: white;
     padding: 5px 10px;
 }
+/* --------------------------------reponsive part------------------------ */
 @media (max-width:1400px) {
     .banner{
         height: 100%;
@@ -314,7 +318,7 @@ footer{
     nav{
         text-align: center;
     }
-    .navigation{
+    .navigation-bar{
         display: flex;
         flex-direction: column;
     }
