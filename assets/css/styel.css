@@ -358,7 +358,7 @@ footer{
         align-items: flex-end;
         background-color: rgba(255, 255, 255, 0.452);
         padding: 20px 0;
-        transform: translatex(330px);
+        transform: translatex(600px);
         transition: .5s ease-in-out;
         border-radius: 20px;
     }
@@ -418,7 +418,7 @@ footer{
         display: none;
     }
     .navigation ul li{
-        background-color: violet;
+        background-color: rgb(110, 87, 110);
         width: 100%;
         margin-bottom: 10px;
         text-align: center;
