@@ -312,9 +312,7 @@ footer{
         width: 100%;
     }
     nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
     .navigation{
         display: flex;
@@ -325,6 +323,13 @@ footer{
     .contacct{
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        
     }
     .banner-right{
         width: 90%;
@@ -346,18 +351,20 @@ footer{
         justify-content: center;
     }
     .left-contact video{
-        width: 90%;
+        width: 100%;
+        padding-bottom: 20px;
     }
     .contacct{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .contat-from{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    form p{
+        padding-bottom: 20px;
     }
     .navigation ul li i{
         display: none;
@@ -368,5 +375,9 @@ footer{
         margin-bottom: 10px;
         text-align: center;
         border-radius: 5px;
+    }
+    .banner-heading,
+    .nav-heading{
+        font-size: 18px;
     }
 }
